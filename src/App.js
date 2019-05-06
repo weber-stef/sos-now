@@ -1,12 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
-import Test from './Components/Test';
+import Title from './Components/Title';
 import './App.css';
+import Search from './Components/Search';
+import Filter from './Components/Filter';
+import Content from './Components/Content';
 
 function App() {
   return (
     <wrapper>
-      <Test />
+      <Title />
+      <Search />
+      <Filter />
+      <Content />
 
     </wrapper>
   );
