@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": "2",
   "builds": [
     {
       "src": "package.json",
@@ -9,14 +9,6 @@
       }
     }
   ],
-  "name": "sos-now",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.0"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -38,44 +30,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "routes": [
-    {
-      "src": "/static/(.*)",
-      "headers": {
-        "cache-control": "s-maxage=31536000,immutable"
-      },
-      "dest": "/static/$1"
-    },
-    {
-      "src": "/favicon.ico",
-      "dest": "/favicon.ico"
-    },
-    {
-      "src": "/asset-manifest.json",
-      "dest": "/asset-manifest.json"
-    },
-    {
-      "src": "/manifest.json",
-      "dest": "/manifest.json"
-    },
-    {
-      "src": "/precache-manifest.(.*)",
-      "dest": "/precache-manifest.$1"
-    },
-    {
-      "src": "/service-worker.js",
-      "headers": {
-        "cache-control": "s-maxage=0"
-      },
-      "dest": "/service-worker.js"
-    },
-    {
-      "src": "/(.*)",
-      "headers": {
-        "cache-control": "s-maxage=0"
-      },
-      "dest": "/index.html"
-    }
-  ]
+  }
 }
