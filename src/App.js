@@ -1,20 +1,21 @@
-import React from 'react';
-import Title from './Components/Title';
-import './App.css';
-import Search from './Components/Search';
-import Filter from './Components/Filter';
-import Content from './Components/Content';
+import React, { Component } from 'react';
+import Title from "./Components/Title";
+import Searchandfilter from "./Components/Searchandfilter";
+import Content from "./Components/Content"
 
-function App() {
-  return (
-    <wrapper>
-      <Title />
-      <Search />
-      <Filter />
-      <Content />
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Title />
+        <Searchandfilter />
+        <Content />
 
-    </wrapper>
-  );
+
+      </div>
+    )
+  }
 }
 
-export default App;
+
+
